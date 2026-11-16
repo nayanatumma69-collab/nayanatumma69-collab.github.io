@@ -201,6 +201,36 @@
 
     .skill span { display: block; color: var(--cyan); font-size: 23px; margin-bottom: 7px; }
 
+    .tech-logos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 30px;
+      padding: 22px;
+      background: rgba(17,23,42,.55);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .tech-logos img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      transition: .25s;
+    }
+
+    .tech-logos img:hover { transform: translateY(-5px) scale(1.08); }
+
+    .tech-logos-label {
+      width: 100%;
+      color: var(--muted);
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 2px;
+    }
+
     .project-grid { grid-template-columns: repeat(2, 1fr); }
 
     .project-card { overflow: hidden; padding: 0; }
@@ -258,6 +288,10 @@
     @media(max-width: 760px) {
       .nav-inner { align-items: flex-start; padding: 15px 0; flex-direction: column; }
       .nav-links { gap: 13px; }
+      .buttons { gap: 10px; }
+      .btn { padding: 12px 16px; }
+      .tech-logos { gap: 18px; padding: 18px 12px; }
+      .tech-logos img { width: 36px; height: 36px; }
       .hero { min-height: auto; padding: 85px 0; }
       h1 { letter-spacing: -1.5px; }
       .about-grid, .project-grid, .experience-grid { grid-template-columns: 1fr; }
@@ -295,6 +329,8 @@
     <div class="buttons">
       <a class="btn btn-primary" href="#projects">Explore My Projects ↗</a>
       <a class="btn" href="#contact">Let's Connect</a>
+      <a class="btn" href="assets/Nayana_Tumma_GenAI_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume ↗</a>
+      <a class="btn" href="assets/Nayana_Tumma_GenAI_Resume.pdf" download>Download Resume ↓</a>
     </div>
 
     <div class="socials">
@@ -361,6 +397,17 @@
       <div class="skill"><span>◉</span>ChromaDB</div>
       <div class="skill"><span>▦</span>Pandas</div>
       <div class="skill"><span>↗</span>Git & GitHub</div>
+    </div>
+
+    <div class="tech-logos" aria-label="Technology logos">
+      <div class="tech-logos-label">Tools and technologies used in my development workflow</div>
+      <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" loading="lazy">
+      <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" loading="lazy">
+      <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" loading="lazy">
+      <img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code" title="Visual Studio Code" loading="lazy">
+      <img src="https://skillicons.dev/icons?i=html" alt="HTML5" title="HTML5" loading="lazy">
+      <img src="https://skillicons.dev/icons?i=css" alt="CSS3" title="CSS3" loading="lazy">
+      <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" loading="lazy">
     </div>
   </div>
 </section>
